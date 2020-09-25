@@ -1,67 +1,43 @@
+//Lab04 - Refactor this code for readability and future users
+
+//Send math functions to mathutils.js
+
+//Send clickhandlers to clickhandlers.js, the click handler describes what happens when the user clicks button
+
 // import functions and grab DOM elements
+import { handleAddClick, handleSubtractionClick, handleMultiplyClick, handleDivisionClick, handleVariClick } from './clickHandlers.js';
 
-//Addition Section
-const numberAdden1 = document.getElementById('user-input-1');
-const numberAdden2 = document.getElementById('user-input-2');
+
+////Addition button GETs////
 const buttonAdd = document.getElementById('add');
-const resultsAdd = document.getElementById('add-results');
 
-buttonAdd.addEventListener('click', () => {
-    // post-click logic goes here!
-        
-    const value1 = Number(numberAdden1.value);
-    // console.log(value1);
-    const value2 = Number(numberAdden2.value);
-    
-    resultsAdd.textContent = "The sum of the input values is: " + (value1 + value2);
-});
+//Add button event listener
+buttonAdd.addEventListener('click', (handleAddClick));
 
 
-//Subtraction Section
-const numberSub1 = document.getElementById('user-input-3');
-const numberSub2 = document.getElementById('user-input-4');
+////Subtraction button GETs////
 const buttonSubtract = document.getElementById('subtract');
-const resultsSubtract = document.getElementById('subtract-results');
 
-buttonSubtract.addEventListener('click', () => {
-    // post-click logic goes here!
-        
-    const value3 = Number(numberSub1.value);
-    // console.log(value3);
-    const value4 = Number(numberSub2.value);
-    
-    resultsSubtract.textContent = "The difference of the input values is: " + (value3 - value4);
-});
+//Subtraction button event listener
+buttonSubtract.addEventListener('click', (handleSubtractionClick));
 
 
-//Multiplication Section
-const numberMult1 = document.getElementById('user-input-5');
-const numberMult2 = document.getElementById('user-input-6');
+////Multiplication Section////
 const buttonMultiply = document.getElementById('multiply');
-const resultsMultiply = document.getElementById('multiply-results');
 
-buttonMultiply.addEventListener('click', () => {
-    // post-click logic goes here!
-        
-    const value5 = Number(numberMult1.value);
-    // console.log(value1);
-    const value6 = Number(numberMult2.value);
-    
-    resultsMultiply.textContent = "The product of the input values is: " + (value5 * value6);
-});
+//Multiply button event listener
+buttonMultiply.addEventListener('click', (handleMultiplyClick));
 
-//Division Section
-const numberDiv1 = document.getElementById('user-input-7');
-const numberDiv2 = document.getElementById('user-input-8');
+
+////Division Button GETs////
 const buttonDivision = document.getElementById('divide');
-const resultsDivision = document.getElementById('divide-results');
 
-buttonDivision.addEventListener('click', () => {
-    // post-click logic goes here!
-        
-    const value7 = Number(numberDiv1.value);
-    // console.log(value1);
-    const value8 = Number(numberDiv2.value);
-    
-    resultsDivision.textContent = "The dividend of the input values is: " + (value7 / value8);
-});
+//Division button event listener
+buttonDivision.addEventListener('click', (handleDivisionClick));
+
+
+////Vari-Operand GETs////
+const buttonVari = document.getElementById('vari-button');
+
+//Use the button to evaluate the numbers with the proper operand
+buttonVari.addEventListener('click', (handleVariClick));

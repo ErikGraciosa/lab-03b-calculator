@@ -33,13 +33,17 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 600px;
+    justify-content: space-around;
+    height: 800px;
     background-color:var(--color2);
+    /* border: solid black 2px; */
 }
 
 div {
      /* border: solid black 2px; */
+     padding: 10px;
+     border-radius: 20px;
+     border: solid white 3px;
 }
 
 p {
@@ -74,6 +78,8 @@ h2 {
 button {
     width: 200px;
     height: 40px;
+    border-radius: 10px;
+    font-size: 12pt;
 }
 
 input {
@@ -85,8 +91,14 @@ section {
     font-weight: 700;
 }
 
+span {
+    font-size: 20pt;
+    font-weight: 700;
+}
+
 .gutter-right {
     margin-right: 20px;
+    border: 0;
 }
 
 .main-logo {
@@ -97,8 +109,9 @@ header img {
     height: var(--header-height);
 }
 
-.single-calc {
-    padding: 5px;
+.vari-calc {
+    background-color: gold;
+    border: solid black 3px;
 }
 
 .addition {
@@ -117,6 +130,12 @@ header img {
     background-color: var(--color5);
 }
   
+#dropdown-vari {
+    height: 40px;
+    
+    font-weight: 900;
+}
+
 footer {
     position: fixed;
     width: 100%;

@@ -21,31 +21,47 @@
     <main>
         <div class="single-calc, addition">
             <p>ADDITION</p>
-            <input id="user-input-1" placeholder="(input number here) +">
-            <input id="user-input-2" placeholder="(input number here)">
+            <input id="user-input-1" placeholder="(input number here)"><span>+</span>
+            <input id="user-input-2" placeholder="(input number here)"><span>=</span>
             <button id="add">Add these numbers!</button>
             <section id="add-results">Results displayed here</section>
         </div>
         <div class="single-calc, subtraction">
             <p>SUBTRACTION</p>
-            <input id="user-input-3" placeholder="(input number here) -">
-            <input id="user-input-4" placeholder="(input number here)">
+            <input id="user-input-3" placeholder="(input number here)"><span>-</span>
+            <input id="user-input-4" placeholder="(input number here)"><span>=</span>
             <button id="subtract">Subtract these numbers!</button>
             <section id="subtract-results">Results displayed here</section>
         </div>
         <div class="single-calc, multiplication">
             <p>MULTIPLICATION</p>
-            <input id="user-input-5" placeholder="(input number here) *">
-            <input id="user-input-6" placeholder="(input number here)">
+            <input id="user-input-5" placeholder="(input number here)"><span>*</span>
+            <input id="user-input-6" placeholder="(input number here)"><span>=</span>
             <button id="multiply">Multiply these numbers!</button>
             <section id="multiply-results">Results displayed here</section>
         </div>
         <div class="single-calc, division">
             <p>DIVISION</p>
-            <input id="user-input-7" placeholder="(input number here) /">
-            <input id="user-input-8" placeholder="(input number here)">
+            <input id="user-input-7" placeholder="(input number here)"><span>-</span>
+            <input id="user-input-8" placeholder="(input number here)"><span>=</span>
             <button id="divide">Divide these numbers!</button>
             <section id="divide-results">Results displayed here</section>
+        </div>
+        <div class="single-calc, vari-calc">
+            <p>
+                
+            </p>   
+            <input id="user-input-9" placeholder="(input number here)"><span id="vari-operand"></span>
+            <select name="dropdown" id="dropdown-vari">
+                <option value="pick-operand" selected>Pick Operand</option>
+                <option value="dropdown-add">ADD +</option>
+                <option value="dropdown-subtract">SUBTRACT -</option>
+                <option value="dropdown-multiply">MULTIPLY *</option>
+                <option value="dropdown-divide">DIVIDE /</option>
+            </select>
+            <input id="user-input-10" placeholder="(input number here)"><span>=</span>
+            <button id="vari-button">Crunch these numbers!</button>
+            <section id="vari-results">Results displayed here</section>
         </div>
     </main>
     <footer>
