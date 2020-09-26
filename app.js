@@ -5,7 +5,7 @@
 //Send clickhandlers to clickhandlers.js, the click handler describes what happens when the user clicks button
 
 // import functions and grab DOM elements
-import { handleAddClick, handleSubtractionClick, handleMultiplyClick, handleDivisionClick, handleVariClick } from './clickHandlers.js';
+import { handleAddClick, handleSubtractionClick, handleMultiplyClick, handleDivisionClick, handleVariClick } from './clickhandlers.js';
 
 
 ////Addition button GETs////
