@@ -16,8 +16,8 @@ export function handleAddClick() {
     const value1 = Number(numberAdden1.value);
     const value2 = Number(numberAdden2.value);
 
-    resultsAdd.textContent = "The sum of the input values is: " + add(value1, value2);
-    // console.log("did I get here");
+    resultsAdd.textContent = 'The sum of the input values is: ' + add(value1, value2);
+    // console.log('did I get here');
 }
 
 
@@ -32,8 +32,8 @@ export function handleSubtractionClick() {
     const value3 = Number(numberSub1.value);
     const value4 = Number(numberSub2.value);
 
-    resultsSubtract.textContent = "The difference of the input values is: " + subtract(value3,  value4);
-};
+    resultsSubtract.textContent = 'The difference of the input values is: ' + subtract(value3, value4);
+}
 
 
 
@@ -47,7 +47,7 @@ export function handleMultiplyClick() {
     const value5 = Number(numberMult1.value);
     // console.log(value1);
     const value6 = Number(numberMult2.value);
-    resultsMultiply.textContent = "The product of the input values is: " + multiply(value5, value6);
+    resultsMultiply.textContent = 'The product of the input values is: ' + multiply(value5, value6);
 }
 
 
@@ -62,7 +62,7 @@ export function handleDivisionClick() {
     const value7 = Number(numberDiv1.value);
     // console.log(value1);
     const value8 = Number(numberDiv2.value);    
-    resultsDivision.textContent = "The dividend of the input values is: " + divide(value7, value8);
+    resultsDivision.textContent = 'The dividend of the input values is: ' + divide(value7, value8);
 }
 
 
@@ -75,18 +75,18 @@ const dropdownVari = document.getElementById('dropdown-vari');
 export function handleVariClick() {
     const value9 = Number(numberVari1.value);    
     const value10 = Number(numberVari2.value);
-    const readout = "The results of the input values is: ";
+    const readout = 'The results of the input values is: ';
     
     //Calculate results 
-    if(dropdownVari.value === "dropdown-subtract") {
+    if (dropdownVari.value === 'dropdown-subtract') {
         resultsVari.textContent = readout + subtract(value9, value10);
-    } else if (dropdownVari.value === "dropdown-add") {
+    } else if (dropdownVari.value === 'dropdown-add') {
         resultsVari.textContent = readout + add(value9, value10);
-    } else if (dropdownVari.value === "dropdown-multiply") {
+    } else if (dropdownVari.value === 'dropdown-multiply') {
         resultsVari.textContent = readout + multiply(value9, value10);
-    } else if (dropdownVari.value === "dropdown-divide") {
+    } else if (dropdownVari.value === 'dropdown-divide') {
         resultsVari.textContent = readout + divide(value9, value10);
     } else {
-        resultsVari.textContent = "Please select an operand."
+        resultsVari.textContent = 'Please select an operand.';
     }
 }
